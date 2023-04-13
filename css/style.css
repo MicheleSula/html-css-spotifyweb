@@ -30,7 +30,7 @@ a {
 
 /* Buttons */
 .btn {
-    color: white;
+    color: gray;
     padding: 0.8rem 3rem;
     margin-right: 1.5rem;
     border-radius: 30px;
@@ -38,7 +38,10 @@ a {
     font-weight: bold;
     font-size: 1rem;
 }
-
+/* Hover effects */
+main #nav-menu a:hover, #main-nav-menu a:hover, #call-to-action a:hover {
+    color: white;
+}
 /* WRAPPER */
 #wrapper{
     width: 100%;
