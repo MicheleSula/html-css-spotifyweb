@@ -21,9 +21,6 @@ a {
 .text-light-gray {
     color: rgb(114, 114, 114);
 }
-.text-light-green { 
-    color: #a3f22d;
-}
 
 /* Text sizes */
 .section-title {
@@ -38,7 +35,6 @@ a {
     margin-right: 1.5rem;
     border-radius: 30px;
     border: 1px solid white;
-    transition: all 0.1s linear;
     font-weight: bold;
     font-size: 1rem;
 }
@@ -71,18 +67,19 @@ main #nav-menu {
     color: gray;
 }
 
-.border-left {
-    background-color: #adff2f;
-    height: 100%;
-    width: 2px;
-    position: absolute;
-    left: -1rem;
-    top: 0;
-}
-#nav-menu a[selected] {
-    position: relative;
-    color: white;
-}
+    /* Border to selected element */
+    .border-left {
+        background-color: #adff2f;
+        height: 100%;
+        width: 2px;
+        position: absolute;
+        left: -1rem;
+        top: 0;
+    }
+    #nav-menu a[selected] {
+        position: relative;
+        color: white;
+    }
 
 main #nav-menu p {
     padding-left: 0.3rem;
@@ -109,6 +106,9 @@ main #nav-menu-xs {
 }
 
 /* Playlist */
+#playlist {
+    height: 63%;
+}
 #playlist h3 {
     font-weight: bold;
     font-size: 1rem;
@@ -131,7 +131,7 @@ main #nav-menu-xs {
 #list-playlist {
     overflow-y: auto;
     padding-top: 1rem;
-    max-height: 40%;
+    max-height: 60%;
 }
 #list-playlist a {
     padding-top: 0.8rem;
@@ -141,12 +141,16 @@ main #nav-menu-xs {
 /* download-app */
 #download-app {
     justify-self: flex-end;
+    padding-bottom: 150px;
 }
 #download-app a {
     display: flex;
     padding: 0.25rem 0;
     align-items: center;
     color: gray;
+}
+#download-app img {
+    width: 15px;
 }
 #download-app a .profile-icon {
     border-radius: 15px;
@@ -196,21 +200,23 @@ main #main-content #call-to-action{
     font-weight: bold;
 }
 
-.border-bottom {
-    background-color: #adff2f;
-    height: 2px;
-    width: 50%;
-    position: absolute;
-    left: 50%;
-    bottom: -0.5rem;
-    transform: translate(-50%);
-}
+    /* Border to selected element */
+    .border-bottom {
+        background-color: #adff2f;
+        height: 2px;
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        bottom: -0.5rem;
+        transform: translate(-50%);
+    }
 
-#main-nav-menu a[selected] {
-    position: relative;
-    color: white;
+    #main-nav-menu a[selected] {
+        position: relative;
+        color: white;
 
-}
+    }
+
 /* Sections width and margin */
 #recently-played, #created-for-me, #popular-artists, #rankings{
     width: 100%;
