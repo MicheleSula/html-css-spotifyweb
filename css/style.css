@@ -68,6 +68,20 @@ main #nav-menu {
     min-height: 350px;
     height: calc(100vh - 100px);
     padding: 1.2rem 1rem 0 1rem;
+    color: gray;
+}
+
+.border-left {
+    background-color: #adff2f;
+    height: 100%;
+    width: 2px;
+    position: absolute;
+    left: -1rem;
+    top: 0;
+}
+#nav-menu a[selected] {
+    position: relative;
+    color: white;
 }
 
 main #nav-menu p {
@@ -132,7 +146,7 @@ main #nav-menu-xs {
     display: flex;
     padding: 0.25rem 0;
     align-items: center;
-    color: lightgray;
+    color: gray;
 }
 #download-app a .profile-icon {
     border-radius: 15px;
@@ -177,11 +191,26 @@ main #main-content #call-to-action{
     gap: 2rem;
 }
 #main-nav-menu a {
-    color: lightgray;
+    color: gray;
     font-size: 0.8rem;
     font-weight: bold;
 }
 
+.border-bottom {
+    background-color: #adff2f;
+    height: 2px;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: -0.5rem;
+    transform: translate(-50%);
+}
+
+#main-nav-menu a[selected] {
+    position: relative;
+    color: white;
+
+}
 /* Sections width and margin */
 #recently-played, #created-for-me, #popular-artists, #rankings{
     width: 100%;
