@@ -38,10 +38,12 @@ a {
     font-weight: bold;
     font-size: 1rem;
 }
+
 /* Hover effects */
 main #nav-menu a:hover, #main-nav-menu a:hover, #call-to-action a:hover {
     color: white;
 }
+
 /* WRAPPER */
 #wrapper{
     width: 100%;
@@ -262,15 +264,16 @@ main #main-content #call-to-action{
     font-size: 3rem;
 }
 
+.item .box-image img{
+    width: 100%;
+}
+
 /* Hover effects on box image */
 .item:hover .box-image i{
     opacity: 80%;
 }
 .item:hover .box-image i:hover{
     opacity: 100%;
-}
-.item .box-image img{
-    width: 100%;
 }
 .item:hover .box-image img{
     filter: brightness(.4);
@@ -428,6 +431,12 @@ main #main-content #call-to-action{
 
 /* Device size XS */
 @media screen and (max-width: 600px){
+    .item-container .item{
+        width: calc(100% - 1rem);
+    }
+    .item-container{
+        row-gap: 0;
+    }
     main #nav-menu {
         display: none;
     }
